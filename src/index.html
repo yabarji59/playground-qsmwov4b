@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playground JavaScript</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <h1>Playground JavaScript</h1>
+    
+    <div class="section">
+        <div class="exercise" id="variables">
+            <h2>1. Variables et Types de données</h2>
+            <p>Déclarez et utilisez différentes variables en JavaScript.</p>
+            <div class="code-example">
+                <pre>
+let nombre = 42;
+let texte = "Hello World";
+let booleen = true;
+let tableau = [1, 2, 3];
+let objet = { nom: "John", age: 30 };</pre>
+            </div>
+            <button onclick="runVariablesExercise()">Exécuter</button>
+            <div class="result" id="variables-result"></div>
+        </div>
+
+        <div class="exercise" id="arrays">
+            <h2>2. Tableaux</h2>
+            <p>Manipulez des tableaux avec différentes méthodes.</p>
+            <div class="code-example">
+                <pre>
+let fruits = ['pomme', 'banane', 'orange'];
+fruits.push('fraise');
+fruits.unshift('kiwi');
+fruits.pop();
+fruits.shift();</pre>
+            </div>
+            <button onclick="runArraysExercise()">Exécuter</button>
+            <div class="result" id="arrays-result"></div>
+        </div>
+
+        <div class="exercise" id="conditions">
+            <h2>3. Conditions</h2>
+            <p>Utilisez les structures conditionnelles.</p>
+            <div class="code-example">
+                <pre>
+if (age >= 18) {
+    console.log("Majeur");
+} else {
+    console.log("Mineur");
+}</pre>
+            </div>
+            <button onclick="runConditionsExercise()">Exécuter</button>
+            <div class="result" id="conditions-result"></div>
+        </div>
+
+        <div class="exercise" id="loops">
+            <h2>4. Boucles</h2>
+            <p>Explorez les différentes boucles en JavaScript.</p>
+            <div class="code-example">
+                <pre>
+for (let i = 1; i <= 5; i++) {
+    console.log(i);
+}
+
+while (compteur <= 3) {
+    console.log(compteur);
+    compteur++;
+}</pre>
+            </div>
+            <button onclick="runLoopsExercise()">Exécuter</button>
+            <div class="result" id="loops-result"></div>
+        </div>
+
+        <div class="exercise" id="functions">
+            <h2>5. Fonctions</h2>
+            <p>Créez et utilisez des fonctions.</p>
+            <div class="code-example">
+                <pre>
+function addition(a, b) {
+    return a + b;
+}
+
+const multiplication = (a, b) => a * b;
+
+function saluer(nom = "visiteur") {
+    return `Bonjour ${nom} !`;
+}</pre>
+            </div>
+            <button onclick="runFunctionsExercise()">Exécuter</button>
+            <div class="result" id="functions-result"></div>
+        </div>
+    </div>
+
+    <script src="js/exercises.js"></script>
+</body>
+</html> 
