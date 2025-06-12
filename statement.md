@@ -20,62 +20,93 @@ Ce playground vous permet de pratiquer et d'expérimenter avec les concepts fond
    - Cliquez sur "Exécuter" pour voir les résultats
    - Modifiez le code pour expérimenter
 
-## Exemple de code
+## Exercices pratiques
+
+### Exercice 1 : Variables et types de données
 
 ```javascript runnable
-// Déclaration de variables
-let nombre = 42;
-let texte = "Hello World";
-let booleen = true;
+// Déclarez trois variables :
+// 1. Une variable 'nom' contenant votre prénom
+// 2. Une variable 'age' contenant votre âge
+// 3. Une variable 'estEtudiant' contenant true ou false
 
-// Affichage des résultats
-console.log("Nombre :", nombre);
-console.log("Texte :", texte);
-console.log("Booléen :", booleen);
+// Votre code ici
+let nom = "";
+let age = 0;
+let estEtudiant = false;
+
+// Affichez les variables avec console.log
+console.log("Nom :", nom);
+console.log("Âge :", age);
+console.log("Est étudiant :", estEtudiant);
 ```
 
-## Quiz JavaScript
-
-Testez vos connaissances avec ce quiz interactif ! Pour chaque question, modifiez la variable `reponse` avec votre choix (1, 2, 3 ou 4).
+### Exercice 2 : Tableaux
 
 ```javascript runnable
-// Quiz sur les variables
-console.log("=== Quiz JavaScript ===");
-console.log("\nQuestion 1 : Quel est le type de la variable suivante ?");
-console.log("let age = 25;");
-console.log("1. string");
-console.log("2. number");
-console.log("3. boolean");
-console.log("4. undefined");
+// Créez un tableau 'fruits' contenant 5 fruits
+// Utilisez la méthode push() pour ajouter un fruit
+// Utilisez la méthode pop() pour retirer le dernier fruit
+// Affichez la longueur du tableau et son contenu
 
-// Votre réponse ici
-let reponse = 0;
+// Votre code ici
+let fruits = [];
 
-// Vérification de la réponse
-if (reponse === 2) {
-    console.log("\n✅ Correct ! 'age' est bien un nombre (number).");
-} else {
-    console.log("\n❌ Incorrect. La bonne réponse est 2 (number).");
-    console.log("Explication : En JavaScript, les nombres entiers sont de type 'number'.");
+// Affichez les résultats
+console.log("Tableau de fruits :", fruits);
+console.log("Nombre de fruits :", fruits.length);
+```
+
+### Exercice 3 : Conditions
+
+```javascript runnable
+// Créez une fonction qui vérifie si un nombre est pair ou impair
+// La fonction doit afficher "Le nombre X est pair" ou "Le nombre X est impair"
+
+function verifierNombre(nombre) {
+    // Votre code ici
 }
 
-// Question suivante
-console.log("\nQuestion 2 : Quelle est la bonne syntaxe pour déclarer une constante ?");
-console.log("1. var PI = 3.14;");
-console.log("2. let PI = 3.14;");
-console.log("3. const PI = 3.14;");
-console.log("4. PI = 3.14;");
+// Testez la fonction avec différents nombres
+verifierNombre(4);
+verifierNombre(7);
+verifierNombre(0);
+```
 
-// Votre réponse ici
-reponse = 0;
+### Exercice 4 : Boucles
 
-// Vérification de la réponse
-if (reponse === 3) {
-    console.log("\n✅ Correct ! 'const' est le mot-clé pour déclarer une constante.");
-} else {
-    console.log("\n❌ Incorrect. La bonne réponse est 3 (const PI = 3.14;).");
-    console.log("Explication : 'const' est utilisé pour déclarer des variables qui ne peuvent pas être réassignées.");
+```javascript runnable
+// Créez un tableau de nombres de 1 à 10
+// Utilisez une boucle for pour calculer la somme de tous les nombres
+// Affichez le résultat
+
+// Votre code ici
+let nombres = [];
+let somme = 0;
+
+// Affichez le résultat
+console.log("Somme des nombres :", somme);
+```
+
+### Exercice 5 : Fonctions
+
+```javascript runnable
+// Créez une fonction qui calcule la moyenne d'un tableau de notes
+// La fonction doit :
+// 1. Prendre un tableau de notes en paramètre
+// 2. Calculer la moyenne
+// 3. Retourner "Excellent" si la moyenne >= 16
+// 4. Retourner "Bien" si la moyenne >= 14
+// 5. Retourner "Moyen" si la moyenne >= 12
+// 6. Retourner "Insuffisant" sinon
+
+function calculerMoyenne(notes) {
+    // Votre code ici
 }
+
+// Testez la fonction
+let notes = [15, 17, 14, 16, 13];
+console.log("Résultat :", calculerMoyenne(notes));
 ```
 
 ## Conseils
