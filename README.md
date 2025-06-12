@@ -43,18 +43,29 @@ Le playground couvre les concepts essentiels du JavaScript :
    - Fonctions fléchées
    - Paramètres et retours
 
-## 🛠️ Installation
+## 🛠️ Structure du Projet
 
-1. Clonez le repository :
-   ```bash
-   git clone [URL_DU_REPO]
-   ```
-
-2. Ouvrez le fichier `src/index.html` dans votre navigateur
+```
+playground/
+├── src/
+│   ├── css/
+│   │   └── styles.css
+│   ├── js/
+│   │   └── exercises.js
+│   ├── quiz/
+│   │   ├── quiz.html
+│   │   └── quiz.js
+│   ├── assets/
+│   └── docs/
+│       └── README.md
+├── index.html
+├── statement.md
+└── techio.yml
+```
 
 ## 💻 Utilisation
 
-1. Ouvrez le fichier `src/index.html` dans votre navigateur
+1. Ouvrez le fichier `index.html` dans votre navigateur
 2. Naviguez à travers les différentes sections
 3. Pour chaque exercice :
    - Lisez la description
